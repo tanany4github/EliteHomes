@@ -1,0 +1,553 @@
+﻿body {
+  overflow-x: hidden;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+::selection {
+  background-color: #a684ff;
+  color: white;
+}
+
+/* Navbar */
+.navbar .nav-link {
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #7b2cff !important;
+  border-bottom: 3px solid #7b2cff;
+}
+
+#mainNav .nav-link.active {
+  color: #7b2cff !important;
+}
+
+.dropdown:hover .estate-dropdown-box {
+  display: block;
+}
+
+.estate-dropdown-box {
+  top: 88px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 78vw;
+}
+
+/* Hero */
+.estate-dark-layer {
+  background: rgba(82, 4, 159, 0.82);
+}
+
+.estate-select-btn::after {
+  display: none;
+}
+
+.estate-primary-fill,
+.estate-gradient-button,
+.estate-send-btn,
+.estate-purple-bg,
+.estate-social-box {
+  background: linear-gradient(90deg, #8121fd, #b800ff);
+}
+
+.estate-gradient-button,
+.estate-search-btn,
+.estate-send-btn {
+  color: white !important;
+  border: 0 !important;
+  transition: 0.3s;
+}
+
+.estate-gradient-button:hover {
+  background: linear-gradient(90deg, #7207e6, #8200dc);
+  color: white;
+}
+
+.estate-search-btn {
+  background-color: #8b1cf6 !important;
+}
+
+.estate-search-btn:hover {
+  background-color: #5f0fb8 !important;
+  color: white !important;
+}
+
+/* Cards */
+.estate-img-scale {
+  transition: 0.4s;
+}
+
+.card:hover .estate-img-scale {
+  transform: scale(1.08);
+}
+
+.estate-property-item {
+  transition: 0.3s;
+}
+
+.estate-property-item:hover {
+  transform: translateY(-8px);
+}
+
+.estate-contact-item {
+  border: 1px solid #edf0f5 !important;
+  transition: 0.3s ease;
+}
+
+.estate-contact-item:hover {
+  transform: translateY(-10px);
+  border-color: #8a22ff !important;
+  box-shadow: 0 18px 40px rgba(112, 8, 231, 0.16) !important;
+}
+
+/* Mega menu */
+.estate-small-card:hover {
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+}
+
+.estate-resource-card,
+.estate-green-card {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  z-index: 1;
+}
+
+.estate-resource-card::after,
+.estate-green-card::after {
+  content: "";
+  position: absolute;
+  top: -70px;
+  right: -85px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.estate-resource-card::after {
+  background-color: #f4efff;
+}
+
+.estate-green-card::after {
+  background-color: #f3fdf6;
+}
+
+.estate-resource-card > *,
+.estate-green-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Text */
+.estate-gradient-word {
+  background: linear-gradient(90deg, #8b1cf6, #b45be8, #ff8a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.estate-purple-word {
+  color: #8b1cf6;
+}
+
+.estate-price-color {
+  color: #7f22fe;
+}
+
+.estate-purple-hover:hover {
+  color: #7f22fe !important;
+}
+
+.estate-contact-purple {
+  color: #7008e7 !important;
+}
+
+.estate-contact-pink {
+  color: #e6006d !important;
+}
+
+.estate-contact-blue {
+  color: #3f2cff !important;
+}
+
+/* Badges */
+.estate-badge-line,
+.estate-orange-line {
+  position: relative;
+}
+
+.estate-badge-line::before,
+.estate-badge-line::after,
+.estate-orange-line::before,
+.estate-orange-line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+.estate-badge-line::before,
+.estate-orange-line::before {
+  right: 100%;
+  margin-right: 25px;
+}
+
+.estate-badge-line::after,
+.estate-orange-line::after {
+  left: 100%;
+  margin-left: 25px;
+}
+
+.estate-badge-line::before {
+  background: linear-gradient(90deg, transparent, #8b1cf6);
+}
+
+.estate-badge-line::after {
+  background: linear-gradient(90deg, #8b1cf6, transparent);
+}
+
+.estate-orange-line::before {
+  background: linear-gradient(90deg, transparent, #fe9b00);
+}
+
+.estate-orange-line::after {
+  background: linear-gradient(90deg, #fd9900, #d85ff0, transparent);
+}
+
+/* Buttons */
+.estate-light-btn {
+  background-color: #ede9fe;
+}
+
+.estate-light-btn:hover {
+  background-color: #ddd6ff !important;
+  color: #7f22fe !important;
+}
+
+.estate-heart-btn {
+  color: #4a5565;
+}
+
+.estate-heart-btn:hover {
+  background-color: white !important;
+}
+
+.estate-heart-btn:hover i {
+  color: #dc3545 !important;
+}
+
+/* Tabs */
+#serviceTabs {
+  border-bottom: 1px solid #dee2e6;
+}
+
+#serviceTabs .nav-link {
+  color: #334155;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: -1px;
+}
+
+#serviceTabs .nav-link.active {
+  color: #7b2cff !important;
+  background-color: #f4efff !important;
+  border-bottom: 3px solid #7b2cff !important;
+}
+
+#serviceTabs .nav-link:hover {
+  color: #8024fe;
+  border-bottom: 3px solid #c7b7fe;
+}
+
+/* FAQ */
+.estate-faq-bg {
+  background-color: #faf7fe;
+}
+
+/* Testimonials */
+.estate-testimonial-bg {
+  background-color: #6f1ed1;
+}
+
+.estate-clients-section {
+  background: linear-gradient(180deg, #5b1596, #55118c);
+  padding: 70px 0 85px;
+}
+
+.estate-clients-title {
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.estate-clients-subtitle {
+  font-size: 21px;
+  line-height: 1.45;
+}
+
+.estate-review-card {
+  max-width: 930px;
+  margin: auto;
+  border-radius: 14px;
+  padding: 36px;
+}
+
+.estate-review-stars {
+  font-size: 22px;
+}
+
+.estate-review-stars span {
+  font-size: 16px;
+}
+
+.estate-review-text {
+  color: #17233d;
+  font-size: 22px;
+  line-height: 1.55;
+}
+
+.estate-review-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.estate-carousel-arrow {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-50%);
+  width: 55px;
+  height: 55px;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.22);
+  color: white;
+  font-size: 26px;
+  z-index: 5;
+}
+
+.estate-carousel-prev {
+  left: 70px;
+}
+
+.estate-carousel-next {
+  right: 70px;
+}
+
+.estate-carousel-dots {
+  position: static;
+  margin-top: 55px;
+  margin-bottom: 0;
+}
+
+.estate-carousel-dots button {
+  width: 13px !important;
+  height: 13px !important;
+  border-radius: 50%;
+  background-color: white !important;
+  opacity: 0.35;
+  border: 0;
+}
+
+.estate-carousel-dots button.active {
+  opacity: 1;
+}
+
+/* Contact */
+.estate-contact-section {
+  position: relative;
+  color: #14213d;
+}
+
+.estate-contact-section .container {
+  z-index: 5;
+}
+
+.estate-contact-desc {
+  max-width: 760px;
+}
+
+.estate-contact-badge {
+  color: #7008e7;
+  border: 1px solid #ddd2ff;
+  letter-spacing: 1px;
+}
+
+.estate-orange-bg {
+  background: linear-gradient(135deg, #e743c9, #ff9b2f);
+}
+
+.estate-blue-bg {
+  background: linear-gradient(135deg, #5b4dff, #3c45f5);
+}
+
+.estate-icon-box {
+  width: 70px;
+  height: 70px;
+  transition: 0.3s ease;
+}
+
+.estate-contact-item:hover .estate-icon-box {
+  transform: scale(1.08);
+}
+
+.estate-small-icon {
+  min-width: 55px;
+  height: 55px;
+}
+
+.estate-social-icon {
+  width: 55px;
+  height: 55px;
+  background-color: rgba(255, 255, 255, 0.18);
+  transition: 0.3s ease;
+}
+
+.estate-social-icon:hover {
+  background-color: rgba(255, 255, 255, 0.28);
+  color: white !important;
+  transform: translateY(-2px) scale(1.08);
+}
+
+.estate-shape-top {
+  position: absolute;
+  top: -70px;
+  right: -80px;
+  width: 330px;
+  height: 330px;
+  background-color: #f4efff;
+  border-bottom-left-radius: 100%;
+  z-index: 1;
+}
+
+.estate-circle-top {
+  position: absolute;
+  top: 95px;
+  right: 125px;
+  width: 135px;
+  height: 135px;
+  border: 5px solid #ded2ff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.estate-shape-bottom {
+  position: absolute;
+  bottom: -130px;
+  left: -120px;
+  width: 420px;
+  height: 420px;
+  background-color: #f4efff;
+  border-top-right-radius: 100%;
+  z-index: 1;
+}
+
+.estate-circle-bottom {
+  position: absolute;
+  bottom: 145px;
+  left: 135px;
+  width: 115px;
+  height: 115px;
+  border: 5px solid #ded2ff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Form */
+.form-control,
+.form-select {
+  background-color: #f8f9fb;
+  border-color: #e2e6ee;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #8a22ff;
+  box-shadow: 0 0 0 0.2rem rgba(138, 34, 255, 0.15);
+}
+
+.estate-agree-box {
+  background-color: #f3efff;
+}
+
+.estate-send-btn {
+  border: 0;
+  transition: 0.3s ease;
+}
+
+.estate-send-btn:hover {
+  transform: translateY(-3px);
+}
+
+.estate-check {
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 4px !important;
+  border: 2px solid #8121fd !important;
+  box-shadow: none !important;
+}
+
+.estate-check:checked {
+  background-color: #8121fd !important;
+  border-color: #8121fd !important;
+}
+
+.estate-check:focus {
+  border-color: #8121fd !important;
+  box-shadow: 0 0 0 0.2rem rgba(129, 33, 253, 0.15) !important;
+}
+
+@media (max-width: 991px) {
+  .estate-clients-title {
+    font-size: 36px;
+  }
+
+  .estate-clients-subtitle {
+    font-size: 18px;
+  }
+
+  .estate-review-card {
+    padding: 28px;
+  }
+
+  .estate-review-text {
+    font-size: 18px;
+  }
+
+  .estate-carousel-arrow {
+    position: static;
+    transform: none;
+    margin: 25px 8px 0;
+  }
+
+  #testimonialCarousel {
+    text-align: center;
+  }
+
+  .estate-carousel-prev,
+  .estate-carousel-next {
+    left: auto;
+    right: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar .nav-link {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+
+  .estate-badge-line::before,
+  .estate-badge-line::after,
+  .estate-orange-line::before,
+  .estate-orange-line::after {
+    width: 45px;
+  }
+}
